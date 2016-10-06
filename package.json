@@ -1,0 +1,25 @@
+{
+  "name": "generic-auth",
+  "version": "1.0.0",
+  "description": "user authentication with angular js and auth0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctodmia/generic-auth.git"
+  },
+  "keywords": [
+    "angularjs",
+    "authentication",
+    "nodejs",
+    "express"
+  ],
+  "author": "Carine Todmia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctodmia/generic-auth/issues"
+  },
+  "homepage": "https://github.com/ctodmia/generic-auth#readme"
+}
