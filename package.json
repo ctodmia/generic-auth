@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/ctodmia/generic-auth/issues"
   },
-  "homepage": "https://github.com/ctodmia/generic-auth#readme"
+  "homepage": "https://github.com/ctodmia/generic-auth#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-material": "^1.1.1"
+  }
 }

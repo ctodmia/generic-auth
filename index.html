@@ -1,21 +1,44 @@
 <!DOCTYPE>
-<html lang="en">
+<html lang="en" ng-app="genericAuth">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="node_modules/angular">
+
 
 	<!-- Angular Material CSS now available via Google CDN; version 1.0.7 used here -->
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
-</head>
-<body>
-	
-	<!-- Angular Material Dependencies -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
 
+    <title>Generic Auth | By Carine Todmia</title>
+
+    <script type="text/javascript" src="https://cdn.auth0.com/js/lock/10.2/lock.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body ng-init="hello= 'hello world!'">
+	
+	<h1>{{hello}}</h1>
+
+	<toolbar></toolbar>
+	
+	<div layout-padding>
+		<ui-view></ui-view>
+	</div>
+
+
+
+	<!-- Angular Material Dependencies -->
+
+	<script src="node_modules/angular/angular.js"></script>
 
 	<!-- Angular Material Javascript now available via Google CDN; version 1.0.7 used here -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.7/angular-material.min.js"></script>	
+	<script src="node_modules/angular-animate/angular-animate.js"></script>
+	<script src="node_modules/angular-material/angular-material.js"></script>
+	<script src="node_modules/angular-aria/angular-aria.js"></script>
+	<script src="node_modules/angular-jwt/dist/angular-jwt.js"></script>
+	<script src="node_modules/angular-storage/dist/angular-storage.js"></script><script src="node_modules/auth0-angular/build/auth0-angular.js"></script>
+	<script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+
+	<script src="app.js"></script>	
+	<script src="components/toolbar/toolbar.dir.js"></script>
+	<script src="components/profile/profile.ctr.js"></script>
 </body>
 </html>
