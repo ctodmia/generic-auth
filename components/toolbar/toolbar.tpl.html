@@ -4,8 +4,8 @@
 			<span>Generic Auth</span>
 		</h2>
 		<span flex></span>
-		<md-button>Login</md-button>
-		<md-button>Profile</md-button>
-		<md-button>Logout</md-button>
+		<md-button aria-label='login' ng-if="!isAuthenticated" ng-click="authService.login()">Login</md-button>
+		<md-button aria-label='logout', ng-click="toolbar.logout()">Profile</md-button>
+		<md-button ng-if="isAuthenticated" ng-click="authService.logout();">Logout</md-button>
 	</div>
 </md-toolbar>

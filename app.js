@@ -1,6 +1,12 @@
-angular.module('genericAuth', ['auth0', 'angular-storage', 'angular-jwt', 'ngMaterial', 'ui.router'])
+angular.module('genericAuth', ['auth0.lock', 'angular-storage', 'angular-jwt', 'ngMaterial', 'ui.router'])
 
-	.config(['$provide', 'authProvider', '$urlRouterProvider', '$stateProvider', '$httpProvider', 'jwtInterceptorProvider', function($provide, authProvider, $urlRouterProvider, $stateProvider, $httpProvider, jwtInterceptorProvider) {
+	.config(['$provide', 'lockProvider', '$urlRouterProvider', '$stateProvider', '$httpProvider', 'jwtInterceptorProvider', function($provide, lockProvider, $urlRouterProvider, $stateProvider, $httpProvider, jwtInterceptorProvider) {
+		
+		lockProvider.init({
+			domain: 'test-c.auth0.com',
+			clientID: 'z2zUHKUYsjJWmmabARuBckEDpyQrHKdi'
+		});
+
 		$urlRouterProvider.otherwise('/home');
 
 		$stateProvider
